@@ -67,7 +67,7 @@ int main()
             mychecks.write_check(cin);
             break;
         case 3:
-            cout << "Your account balance: $" << mychecks.get_balance();
+            cout << "Your account balance: $" << mychecks.get_balance() << endl;
             break;
         case 4:
             mychecks.show_all(cout);
@@ -95,7 +95,7 @@ int main()
             mychecks.show(payto_find);
             break;
         case 10:
-            cout << "Your average check amount: $" << mychecks.average();
+            cout << "Your average check amount: $" << mychecks.average() << endl;
             break;
         case 0:
             cout << "Thank you for using the Checkbook program.\n";
@@ -121,7 +121,7 @@ int menu()
 {
     int choice;
 
-    cout << "Your Checkbook. Please choose from the following:\n";
+    cout << "Welcome to Your Checkbook Menu. Please choose from the following:\n";
     cout << " 1) Make a deposit.\n";
     cout << " 2) Write a check.\n";
     cout << " 3) See the checkbook balance.\n";
