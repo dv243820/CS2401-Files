@@ -1,0 +1,12 @@
+Script started on 2022-09-29 13:03:50-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="185" LINES="17"]
+]0;d22vanatta@DESKTOP-DV2202: /mnt/c/Users/d22va/Documents/CS2401/lab5[01;32md22vanatta@DESKTOP-DV2202[00m:[01;34m/mnt/c/Users/d22va/Documents/CS2401/lab5[00m$ ./a.out
+Now showing list One:
+Charlie Lisa Drew Derrick AJ Bojian Enter a name to search:Drew
+That name is stored at address: 0x561be43e7f10
+]0;d22vanatta@DESKTOP-DV2202: /mnt/c/Users/d22va/Documents/CS2401/lab5[01;32md22vanatta@DESKTOP-DV2202[00m:[01;34m/mnt/c/Users/d22va/Documents/CS2401/lab5[00m$ ./a.out
+Now showing list One:
+Charlie Lisa Drew Derrick AJ Bojian Enter a name to search:Greg
+That name is not in the list.
+Drew Derrick AJ Bojian Charlie Lisa ]0;d22vanatta@DESKTOP-DV2202: /mnt/c/Users/d22va/Documents/CS2401/lab5[01;32md22vanatta@DESKTOP-DV2202[00m:[01;34m/mnt/c/Users/d22va/Documents/CS2401/lab5[00m$ exit
+
+Script done on 2022-09-29 13:04:33-04:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,11 @@
+Script started on 2022-10-13 12:56:07-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="185" LINES="14"]
+]0;d22vanatta@DESKTOP-DV2202: /mnt/c/Users/d22va/Documents/CS2401/labs/lab7[01;32md22vanatta@DESKTOP-DV2202[00m:[01;34m/mnt/c/Users/d22va/Documents/CS2401/labs/lab7[00m$ ./a.out g++ -Wall lab7main.cc llist.cc
+]0;d22vanatta@DESKTOP-DV2202: /mnt/c/Users/d22va/Documents/CS2401/labs/lab7[01;32md22vanatta@DESKTOP-DV2202[00m:[01;34m/mnt/c/Users/d22va/Documents/CS2401/labs/lab7[00m$ g++ -Wall lab7main.cc llist.cc./a.out [K
+Front View:
+184  187  178  216  450  394  460  536  487  493  522  430  563  328  91  230  364  270  127  641  527  73  437  312  169  468  283  531  363  224  268  636  603  123  559  
+
+Rear View:
+559  123  603  636  268  224  363  531  283  468  169  312  437  73  527  641  127  270  364  230  91  328  563  430  522  493  487  536  460  394  450  216  178  187  184  
+]0;d22vanatta@DESKTOP-DV2202: /mnt/c/Users/d22va/Documents/CS2401/labs/lab7[01;32md22vanatta@DESKTOP-DV2202[00m:[01;34m/mnt/c/Users/d22va/Documents/CS2401/labs/lab7[00m$ exit
+
+Script done on 2022-10-13 12:56:19-04:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,69 @@
+/**
+ *        @file: node_iterator.template
+ *      @author: Drew VanAtta
+ *        @date: October 18, 2022
+ *       @brief: Template file for node_iterator
+ */
+
+#include <iostream>
+#include <iomanip>
+#include <cstdlib>
+using namespace std;
+
+
+//!= operator - returns bool true or false if the current is equal to the iterator.current
+template <class T>
+bool node_iterator<T>::operator!=(node_iterator<T> other) const
+{
+    return current != other.current;
+}
+
+//* operator - returns the data of which the iterator is currently pointing too
+template <class T>
+T node_iterator<T>::operator*() const
+{
+    return current->get_data();
+}
+
+//++ operator - moves the iterator to the next position
+template <class T>
+node_iterator<T> node_iterator<T>::operator++()
+{
+    current = current->next();
+    return *this; // this is the address of the object executing this function
+}
+
+//++ operator fix - moves the iterator the the next position while returning the original
+template <class T>
+node_iterator<T> node_iterator<T>::operator++(int)
+{
+    node_iterator<T> original(*this); // calls copy constructor
+
+    current = current->next();
+    return original; // this is the address of the object executing this function
+}
+
+//-- operator - moves the iterator to previous
+template <class T>
+node_iterator<T> node_iterator<T>::operator--()
+{
+    current = current->get_previous();
+    return *this; // this is the address of the object executing this function
+}
+
+//-- operator int - moves the iterator to previous and returns the original
+template <class T>
+node_iterator<T> node_iterator<T>::operator--(int)
+{
+    node_iterator<T> original(*this); // calls copy constructor
+
+    current = current->get_previous();
+    return original; // this is the address of the object executing this function
+}
+
+//== operator - returns whether or not iterators are the pointing to the same position
+template <class T>
+bool node_iterator<T>::operator==(node_iterator it)
+{
+return(current == it.current);
+}

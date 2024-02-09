@@ -1,0 +1,57 @@
+Script started on 2022-11-03 11:32:29-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="200" LINES="16"]
+]0;d22vanatta@DESKTOP-DV2202: /mnt/c/Users/d22va/Documents/CS2401/labs/lab10[01;32md22vanatta@DESKTOP-DV2202[00m:[01;34m/mnt/c/Users/d22va/Documents/CS2401/labs/lab10[00m$ ./a.exe 
+[6n[m]0;C:\Users\d22va\Documents\CS2401\labs\lab10\a.exe[?25h1) add a Circle.
+2) add a Rectangle.
+3) add a Trapezoid.
+4) quit and see the total cost for the box.
+1
+Enter the thickness followed by the cost_per
+3 10
+Enter the radius
+3
+1) add a Circle.
+2) add a Rectangle.
+3) add a Trapezoid.
+4) quit and see the total cost for the box.
+2
+Enter the thickness followed by the cost_per
+5
+2
+Enter the width followed by the length
+8 4
+1) add a Circle.
+2) add a Rectangle.
+3) add a Trapezoid.
+4) quit and see the total cost for the box.
+3
+Enter the thickness followed by the cost_per
+5 5
+Enter the first base followed by the second base, then the height
+7 5 4 3
+1) add a Circle.
+2) add a Rectangle.
+3) add a Trapezoid.
+4) quit and see the total cost for the box.
+1
+Enter the thickness followed by the cost_per
+2 5
+Enter the radius
+4
+1) add a Circle.
+2) add a Rectangle.
+3) add a Trapezoid.
+4) quit and see the total cost for the box.
+2
+Enter the thickness followed by the cost_per
+10 6
+Enter the width followed by the length
+5 5  
+1) add a Circle.
+2) add a Rectangle.
+3) add a Trapezoid.
+4) quit and see the total cost for the box.
+4
+The total cost of this box of blocks is $3620.88
+]0;d22vanatta@DESKTOP-DV2202: /mnt/c/Users/d22va/Documents/CS2401/labs/lab10[01;32md22vanatta@DESKTOP-DV2202[00m:[01;34m/mnt/c/Users/d22va/Documents/CS2401/labs/lab10[00m$ exit
+
+Script done on 2022-11-03 11:33:52-04:00 [COMMAND_EXIT_CODE="0"]

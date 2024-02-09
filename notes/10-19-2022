@@ -1,0 +1,45 @@
+/**
+ *        @file: 10-19-2022
+ *      @author: Drew VanAtta
+ *        @date: October 19, 2022
+ *       @brief: notes
+ */
+
+
+
+
+
+//Queue (FIFO) - first in first out
+
+template<class T>
+class QUEUE
+{
+    public:
+    QUEUE(){front = back = NULL;}
+
+    void push(const T& item);
+    void pop();
+    T front()const {return front -> data();}
+    bool empty()const {return front == NULL;}
+
+    private:
+    node<T>* front;
+    note<T>* back;
+}
+
+template<class T>
+void QUEUE<T>::push(const T& item)
+{
+    back -> set_next(new node<t>(item));
+    back = back -> next();
+}
+
+
+template<class T>
+void QUEUE<T>::pop(){
+node<T>* tmp = front;
+front = front -> next();
+delete tmp; //NEED FOR PROJECT
+}
+
+

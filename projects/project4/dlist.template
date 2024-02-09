@@ -1,0 +1,18 @@
+/**
+ *        @file: dlist.template
+ *      @author: Drew VanAtta
+ *        @date: October 18, 2022
+ *       @brief: Add Description
+ */
+
+#include "dnode.h"
+#include "dlist.h"
+#include <iostream>
+
+/// function prototypes
+
+dlist::dlist(Dnode *newHead Dnode *newTail)
+{
+    head = newHead;
+    tail = newTail;
+}

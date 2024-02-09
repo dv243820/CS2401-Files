@@ -1,0 +1,69 @@
+yellow mustard
+condiments
+9/26/2021
+1
+ketchup
+condiments
+6/23/2022
+1
+strawberry jelly
+condiments
+6/24/2022
+1
+dill pickles
+condiments
+8/28/2022
+1
+ham lunchmeat
+meat
+9/12/2022
+1
+beef roast
+meat
+9/16/2022
+1
+yogurt
+dairy
+9/22/2022
+1
+whole milk
+dairy
+9/23/2022
+1
+white cheddar
+dairy
+9/26/2022
+1
+orange juice
+drinks
+9/26/2022
+1
+*
+cucumber
+produce
+8/26/2022
+22
+brown sugar
+baking
+9/2/2022
+20
+butter
+dairy
+8/30/2022
+17
+chocolate ice cream
+dairy
+9/6/2022
+5
+brisket
+meat
+7/11/2022
+1
+mayo
+condiments
+9/23/2022
+1
+BBQ sauce
+condiments
+9/26/2022
+1

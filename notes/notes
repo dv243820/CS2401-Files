@@ -1,0 +1,218 @@
+/**
+ *        @file: notes
+ *      @author: Drew VanAtta
+ *        @date: September 23, 2022
+ *       @brief: Add Description
+ */
+
+#include <iostream>
+#include <iomanip>
+#include <cstdlib>
+using namespace std;
+
+/// notes and stuff
+
+class Node
+{
+public:
+    Node(int d = 0, Node *p = nullptr, Node *n = nullptr);
+
+    // accessors
+    int data() { return data_field; }
+    void set_data(int d) { data_field = d; }
+    void set_next(Node *n) { next_field = n; }
+
+    // mutator
+    void set_data(int d) { data_field = d; }
+    void set_next(Node *n) { data_field = n; }
+};
+
+Class LLContain
+{
+public:
+    LLContain() { head = tail = nullptr; };
+
+    // the big 3
+    ~LLContain();
+    LLContain(const LLContain &other);
+    LLContain &operator=(const LLContain &other);
+
+    void add_end(int d);
+    void add_head(int d);
+    void remove(int target);
+    void display() const;
+
+private:
+    Node *head;
+    Node *tail;
+};
+
+// for next project
+// one deconstructor, has to get rid of both lists
+
+// tail points to the last node (like how head points to the first)
+// be care to think about special cases for the tail as well
+// tail is usefull but complicates the node
+//
+//
+// 10/3/2022
+
+/*
+a previous pointer, points to the node before
+previous of first node points to node
+
+*/
+
+Node::Node(int d, Node *p, Node *n)
+{
+    data_field = d;
+    next_field = n;
+    previous_field = p;
+}
+
+void LLContain::add_end(int d)
+{
+    if (head == nullptr)
+    {
+        head = tail = new Node(d);
+    }
+    else
+    {
+        tail->set_next(new Node(d, tail)); // creates new node, sets previous to tail
+        tail = tail->next();               // moves the tail to the new last one we added
+    }
+}
+
+void LLContain::add_head(int d) // adds new node to beginning
+{
+    if (head == nullptr)
+    {
+        head = tail = new Node(d, head);
+    }
+    else
+    {
+        head->set_prev(new Node(d, nullptr, head));
+        head = head->prev();
+    }
+}
+
+void LLContain::remove(int target)
+{
+    Node *cursor;
+    if (head == nullptr) // empty list
+    {
+        return;
+    }
+
+    if (head == tail) // if only one node
+    {
+        if (head->data() == target)
+        {
+            delete head;
+            head = tail = nullptr;
+            return;
+        }
+    }
+    if (head->data() == target) // if target data is what the head is point to
+    {
+        cursor = head;
+        head = head->next();
+        delete cursor;
+        head->set_prev(nullptr);
+    }
+    else
+    {
+        cursor = head;
+        while (cursor != nullptr && cursor->data() != target)
+        {
+            cursor = cursor->next(); // goes until it finds the data
+        }
+        if (cursor != nullptr)
+        {
+            if (cursor == tail)
+            {
+                tail = cursor->prev();
+                tail->set_next(nullptr);
+            }
+            else
+            {
+                cursor->prev()->set_next(cursor->next()); // sets the next of the previous of the data to the right of the cursor
+                cursor->next()->set_prevous(cursor->prev());
+            }
+            delete cursor;
+        }
+    }
+}
+
+// Date tday;
+// tday.make_today();    --- finds todays date
+
+// 10/7/2022
+
+/*
+
+
+DIFFERENCE IN CONSTS WITH POINTERS
+
+const int num = 7; ---- means that num is ALWAYS seven. CANT change
+
+const node* ptr; - pointer to a constant node, pointer can move,
+                   but the node its pointing to cannot change
+
+different from
+
+node* const ptr  - pointer cannot change, but data could be messed with
+
+
+void swap(int& x, int& y) ---- using & keeps it from changing original values
+
+
+*/
+#include "swap.h" // whatever h file this is in
+template <class T>
+void swap(T &x, T &y)
+{
+    T tmp;
+    tmp = x;
+    x = y;
+    y = tmp;
+}
+
+// inside main, use whatever needs to be
+
+template <class T, class S>
+void ssort(T a[], S used)
+{
+    S smallsp;
+    for (S i = 0; i < used - 1; i++)
+    {
+        smallsp = i;
+        for (S j = i + 1; j < used; j++)
+        {
+            if (a[j] < a[smallsp])
+            {
+                smallsp = j;
+            }
+        }
+        swap(a[i], a[smallsp]);
+    }
+}
+
+// 10/10/22    --- templates continued
+// make a template class
+
+template <class T> //save this to .h, but the implementation saved as .template and not .cc
+class Tcontain
+{
+public:
+    Tcontain();
+
+    void add(const T &item);
+    void display(std::ostream &out) const;
+
+private:
+    T data[200];
+    int used;
+};
+
+#include "Tcontain.template"
